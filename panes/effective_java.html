@@ -1,0 +1,108 @@
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=windows-1252"></head><body>
+<h2>Effective Java<br><font size="-1">
+Joshua Bloch</font></h2>
+
+<b>Creating and Destroying Objects</b>
+
+<ol>
+<li>Consider providing static factory methods instead of constructors 
+</li><li>Enforce the singleton property with a private constructor 
+</li><li>Enforce noninstantiability with a private constructor 
+</li><li>Avoid creating duplicate objects 
+</li><li>Eliminate obsolete object references 
+</li><li>Avoid finalizers 
+</li></ol>
+
+<b>Methods Common to All Objects</b>
+
+<ol start="7">
+<li>Obey the general contract when overriding equals 
+</li><li>Always override hashCode when you override equals 
+</li><li>Always override toString 
+</li><li>Override clone judiciously 
+</li><li>Consider implementing Comparable 
+</li></ol>
+
+<b>Classes and Interfaces</b>
+
+<ol start="12">
+<li>Minimize the accessibility of classes and members 
+</li><li>Favor immutability 
+</li><li>Favor composition over inheritance 
+</li><li>Design and document for inheritance or else prohibit it 
+</li><li>Prefer interfaces to abstract classes 
+</li><li>Use interfaces only to define types 
+</li><li>Favor static member classes over nonstatic 
+</li></ol>
+
+<b>Substitutes for C Constructs</b>
+
+<ol start="19">
+<li>Replace structures with classes 
+</li><li>Replace unions with class hierarchies 
+</li><li>Replace enum constructs with classes 
+</li><li>Replace function pointers with classes and interfaces 
+</li></ol>
+
+<b>Methods</b>
+
+<ol start="23">
+<li>Check parameters for validity 
+</li><li>Make defensive copies when needed 
+</li><li>Design method signatures carefully 
+</li><li>Use overloading judiciously 
+</li><li>Return zero-length arrays, not nulls 
+</li><li>Write doc comments for all exposed API elements 
+</li></ol>
+
+<b>General Programming</b>
+
+<ol start="29">
+<li>Minimize the scope of local variables 
+</li><li>Know and use the libraries 
+</li><li>Avoid float and double if exact answers are required 
+</li><li>Avoid strings where other types are more appropriate 
+</li><li>Beware the performance of string concatenation 
+</li><li>Refer to objects by their interfaces 
+</li><li>Prefer interfaces to reflection 
+</li><li>Use native methods judiciously 
+</li><li>Optimize judiciously 
+</li><li>Adhere to generally accepted naming conventions 
+</li></ol>
+
+<b>Exceptions</b>
+
+<ol start="39">
+<li>Use exceptions only for exceptional conditions 
+</li><li>Use checked exceptions for recoverable conditions and run-time exceptions for programming errors 
+</li><li>Avoid unnecessary use of checked exceptions 
+</li><li>Favor the use of standard exceptions 
+</li><li>Throw exceptions appropriate to the abstraction 
+</li><li>Document all exceptions thrown by each method 
+</li><li>Include failure-capture information in detail messages 
+</li><li>Strive for failure atomicity 
+</li><li>Don't ignore exceptions 
+</li></ol>
+
+<b>Threads</b>
+
+<ol start="48">
+<li>Synchronize access to shared mutable data 
+</li><li>Avoid excessive synchronization 
+</li><li>Never invoke wait outside a loop 
+</li><li>Don't depend on the thread scheduler 
+</li><li>Document thread safety 
+</li><li>Avoid thread groups 
+</li></ol>
+
+<b>Serialization</b>
+
+<ol start="54">
+<li>Implement Serializable judiciously 
+</li><li>Consider using a custom serialized form 
+</li><li>Write readObject methods defensively 
+</li><li>Provide a readResolve method when necessary
+</li></ol>
+
+</body></html>

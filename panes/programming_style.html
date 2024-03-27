@@ -1,0 +1,118 @@
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=windows-1252"><title>The Elements of Programming Style</title></head><body>
+<h2>The Elements of Programming Style<br><font size="-1">
+Brian Kernighan, P. J. Plauger</font></h2>
+
+<b>Introduction</b>
+<ol>
+<li>Write clearly - don't be too clever.
+</li></ol>
+
+<b>Expression</b>
+<ol start="2">
+<li>Say what you mean, simply and directly.
+</li><li>Use library functions.
+</li><li>Avoid temporary variables.
+</li><li>Write clearly - don't sacrifice clarity for "efficiency."
+</li><li>Let the machine do the dirty work.
+</li><li>Replace repetitive expressions by calls to a common function.
+</li><li>Parenthesize to avoid ambiguity.
+</li><li>Choose variable names that won't be confused.
+</li><li>Avoid the Fortran arithmetic IF.
+</li><li>Avoid unnecessary branches.
+</li><li>Use the good features of a language; avoid the bad ones.
+</li><li>Don't use conditional branches as a substitute for a logical expression.
+</li><li>Use the "telephone test" for readability.
+</li></ol>
+
+<b>Control Structure</b>
+<ol start="15">
+<li>Use DO-END and indenting to delimit groups of statements.
+</li><li>Use IF-ELSE to emphasize that only one of two actions is to be performed.
+</li><li>Use DO and DO-WHILE to emphasize the presence of loops.
+</li><li>Make your programs read from top to bottom.
+</li><li>Use IF, ELSE IF, ELSE IF, ELSE to implement multi-way branches.
+</li><li>Use the fundamental control flow constructs.
+</li><li>Write first in an easy-to-understand pseudo-language; then translate into
+whatever language you have to use.
+</li><li>Avoid THEN-IF and null ELSE.
+</li><li>Avoid ELSE GOTO and ELSE RETURN.
+</li><li>Follow each decision as closely as possible with its associated action.
+</li><li>Use data arrays to avoid repetitive control sequences.
+</li><li>Choose a data representation that makes the program simple.
+</li><li>Don't stop with your first draft.
+</li></ol>
+
+<b>Program Structure</b>
+<ol start="28">
+<li>Modularize. Use subroutines.
+</li><li>Make the coupling between modules visible.
+</li><li>Each module should do one thing well.
+</li><li>Make sure every module hides something.
+</li><li>Let the data structure the program.
+</li><li>Don't patch bad code – rewrite it.
+</li><li>Write and test a big program in small pieces.
+</li><li>Use recursive procedures for recursively-defined data structures.
+</li></ol>
+
+<b>Input and Output</b>
+<ol start="36">
+<li>Test input for validity and plausibility.
+</li><li>Make sure input cannot violate the limits of the program.
+</li><li>Terminate input by end-of-file or marker, not by count.
+</li><li>Identify bad input; recover if possible.
+</li><li>Treat end of file conditions in a uniform manner.
+</li><li>Make input easy to prepare and output self-explanatory.
+</li><li>Use uniform input formats.
+</li><li>Make input easy to proofread.
+</li><li>Use free-form input when possible.
+</li><li>Use self-identifying input. Allow defaults. Echo both on output.
+</li><li>Localize input and output in subroutines.
+</li></ol>
+
+<b>Common Blunders</b>
+<ol start="47">
+<li>Make sure all variables are initialized before use.
+</li><li>Don't stop at one bug.
+</li><li>Use debugging compilers.
+</li><li>Initialize constants with DATA statements or INITIAL attributes; initialize variables
+with executable code.
+</li><li>Watch out for off-by-one errors.
+</li><li>Take care to branch the right way on equality.
+</li><li>Avoid multiple exits from loops.
+</li><li>Make sure your code "does nothing" gracefully.
+</li><li>Test programs at their boundary values.
+</li><li>Program defensively.
+</li><li>10.0 times 0.1 is hardly ever 1.0.
+</li><li>Don't compare floating point numbers just for equality.
+</li></ol>
+
+<b>Efficiency and Instrumentation</b>
+<ol start="59">
+<li>Make it right before you make it faster.
+</li><li>Keep it right when you make it faster.
+</li><li>Make it clear before you make it faster.
+</li><li>Don't sacrifice clarity for small gains in "efficiency."
+</li><li>Let your compiler do the simple optimizations.
+</li><li>Don't strain to re-use code; reorganize instead.
+</li><li>Make sure special cases are truly special.
+</li><li>Keep it simple to make it faster.
+</li><li>Don't diddle code to make it faster – find a better algorithm.
+</li><li>Instrument your programs. Measure before making "efficiency" changes.
+</li></ol>
+
+<b>Documentation</b>
+<ol start="69">
+<li>Make sure comments and code agree.
+</li><li>Don't just echo the code with comments – make every comment count.
+</li><li>Don't comment bad code – rewrite it.
+</li><li>Use variable names that mean something.
+</li><li>Use statement labels that mean something.
+</li><li>Format a program to help the reader understand it.
+</li><li>Indent to show the logical structure of a program.
+</li><li>Document your data layouts.
+</li><li>Don't over-comment.
+</li></ol>
+
+
+</body></html>

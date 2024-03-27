@@ -1,0 +1,131 @@
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=windows-1252"></head><body>
+<h2>The Practice of Programming<br><font size="-1">
+Brian Kernighan, Rob Pike</font></h2>
+
+<b>Style</b>
+
+<ol>
+<li>Use descriptive names for globals, short names for locals. 
+</li><li>Be consistent. 
+</li><li>Use active names for functions. 
+</li><li>Be accurate. 
+</li><li>Indent to show structure. 
+</li><li>Use the natural form for expressions. 
+</li><li>Parenthesize to resolve ambiguity. 
+</li><li>Break up complex expressions. 
+</li><li>Be clear. 
+</li><li>Be careful with side effects. 
+</li><li>Use a consistent indentation and brace style. 
+</li><li>Use idioms for consistency. 
+</li><li>Use else-ifs for multi-way decisions. 
+</li><li>Avoid function macros. 
+</li><li>Parenthesize the macro body and arguments. 
+</li><li>Give names to magic numbers. 
+</li><li>Define numbers as constants, not macros. 
+</li><li>Use character constants, not integers. 
+</li><li>Use the language to calculate the size of an object. 
+</li><li>Don't belabor the obvious. 
+</li><li>Comment functions and global data. 
+</li><li>Don't comment bad code, rewrite it. 
+</li><li>Don't contradict the code. Clarify, don't confuse.
+</li></ol>
+
+<b>Interfaces</b>
+
+<ol start="24">
+<li>Hide implementation details. 
+</li><li>Choose a small orthogonal set of primitives. 
+</li><li>Don't reach behind the user's back. 
+</li><li>Do the same thing the same way everywhere. 
+</li><li>Free a resource in the same layer that allocated it. 
+</li><li>Detect errors at a low level, handle them at a high level. 
+</li><li>Use exceptions only for exceptional situations.
+</li></ol>
+
+<b>Debugging</b>
+
+<ol start="31">
+<li>Look for familiar patterns. 
+</li><li>Examine the most recent change. 
+</li><li>Don't make the same mistake twice. 
+</li><li>Debug it now, not later. 
+</li><li>Get a stack trace. 
+</li><li>Read before typing. 
+</li><li>Explain your code to someone else. 
+</li><li>Make the bug reproducible. 
+</li><li>Divide and conquer. 
+</li><li>Study the numerology of failures. 
+</li><li>Display output to localize your search. 
+</li><li>Write self-checking code. 
+</li><li>Write a log file. 
+</li><li>Draw a picture. 
+</li><li>Use tools. 
+</li><li>Keep records.
+</li></ol>
+
+<b>Testing</b>
+
+<ol start="47">
+<li>Test code at its boundaries. 
+</li><li>Test pre- and post-conditions. 
+</li><li>Use assertions. 
+</li><li>Program defensively. 
+</li><li>Check error returns. 
+</li><li>Test incrementally. 
+</li><li>Test simple parts first. 
+</li><li>Know what output to expect. 
+</li><li>Verify conservation properties. 
+</li><li>Compare independent implementations. 
+</li><li>Measure test coverage. 
+</li><li>Automate regression testing. 
+</li><li>Create self-contained tests.
+</li></ol>
+
+<b>Performance</b>
+
+<ol start="60">
+<li>Automate timing measurements. 
+</li><li>Use a profiler. 
+</li><li>Concentrate on the hot spots. 
+</li><li>Draw a picture. 
+</li><li>Use a better algorithm or data structure. 
+</li><li>Enable compiler optimizations. 
+</li><li>Tune the code. 
+</li><li>Don't optimize what doesn't matter. 
+</li><li>Collect common subexpressions. 
+</li><li>Replace expensive operations by cheap ones. 
+</li><li>Unroll or eliminate loops. 
+</li><li>Cache frequently-used values. 
+</li><li>Write a special-purpose allocator. 
+</li><li>Buffer input and output. 
+</li><li>Handle special cases separately. 
+</li><li>Precompute results. 
+</li><li>Use approximate values. 
+</li><li>Rewrite in a lower-level language. 
+</li><li>Save space by using the smallest possible data type. 
+</li><li>Don't store what you can easily recompute.
+</li></ol>
+
+<b>Portability</b>
+
+<ol start="80">
+<li>Stick to the standard. 
+</li><li>Program in the mainstream. 
+</li><li>Beware of language trouble spots. 
+</li><li>Try several compilers. 
+</li><li>Use standard libraries. 
+</li><li>Use only features available everywhere. 
+</li><li>Avoid conditional compilation. 
+</li><li>Localize system dependencies in separate files. 
+</li><li>Hide system dependencies behind interfaces. 
+</li><li>Use text for data exchange. 
+</li><li>Use a fixed byte order for data exchange. 
+</li><li>Change the name if you change the specification. 
+</li><li>Maintain compatibility with existing programs and data. 
+</li><li>Don't assume ASCII. 
+</li><li>Don't assume English.
+</li></ol>
+
+
+</body></html>

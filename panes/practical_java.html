@@ -1,0 +1,104 @@
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=windows-1252"></head><body>
+<h2>Practical Java<br><font size="-1">
+Peter Haggar</font></h2>
+
+<b>General Techniques</b>
+
+<ol>
+<li>Understand that parameters are passed by value, not by reference. 
+</li><li>Use final for constant data and constant object references. 
+</li><li>Understand that all non-static methods can be overridden by default. 
+</li><li>Choose carefully between arrays and Vectors. 
+</li><li>Prefer polymorphism to instanceof. 
+</li><li>Use instanceof only when you must. 
+</li><li>Set object references to null when they are no longer needed. 
+</li></ol>
+
+<b>Objects and Equality</b>
+
+<ol start="8">
+<li>Differentiate between reference and primitive types. 
+</li><li>Differentiate between == and equals. 
+</li><li>Do not rely on the default implementation of equals. 
+</li><li>Implement the equals method judiciously. 
+</li><li>Prefer getClass in equals method implementations. 
+</li><li>Call super.equals of base classes. 
+</li><li>Consider carefully instance of in equals method implementations. 
+</li><li>Follow these rules when implementing an equals method. 
+</li></ol>
+
+<b>Exception handling</b>
+
+<ol start="16">
+<li>Know the mechanics of exception control flow. 
+</li><li>Never ignore an exception. 
+</li><li>Never hide an exception. 
+</li><li>Consider the drawback to the throws clause. 
+</li><li>Be specific and comprehensive with the throws clause. 
+</li><li>Use finally to avoid resource leaks. 
+</li><li>Do not return from a try block. 
+</li><li>Place try/catch blocks outside of loops. 
+</li><li>Do not use exceptions for control flow. 
+</li><li>Do not use exceptions for every error condition. 
+</li><li>Throw exceptions from constructors. 
+</li><li>Return objects to a valid state before throwing an exception. 
+</li></ol>
+
+<b>Performance</b>
+
+<ol start="28">
+<li>Focus initially on design, data structures, and algorithms. 
+</li><li>Do not rely on compile-time code optimization. 
+</li><li>Understand runtime code optimization. 
+</li><li>Use StringBuffer, rather than String, for concatenation. 
+</li><li>Minimize the cost of object creation. 
+</li><li>Guard against unused objects. 
+</li><li>Minimize synchronization. 
+</li><li>Use stack variables whenever possible. 
+</li><li>Use static, final, and private methods to allow in lining. 
+</li><li>Initialize instance variables only once. 
+</li><li>Use primitive types for faster and smaller code. 
+</li><li>Do not use an Enumeration or an Iterator to traverse a Vector. 
+</li><li>Use System array copy for copying arrays. 
+</li><li>Prefer an array to a Vector or ArrayList. 
+</li><li>Reuse objects whenever possible. 
+</li><li>Use lazy evaluation. 
+</li><li>Optimize source code by hand. 
+</li><li>Compile to native code. 
+</li></ol>
+
+<b>Multithreading</b>
+
+<ol start="46">
+<li>Understand that for instance methods, <i>synchronized</i> locks objects, not methods or code. 
+</li><li>Distinguish between synchronized statics and synchronized instance methods. 
+</li><li>Use private data with an accessor method instead of public or protected data. 
+</li><li>Avoid unnecessary synchronization. 
+</li><li>Use synchronized or volatile when accessing shared variables. 
+</li><li>Lock all objects involved in a single operation. 
+</li><li>Acquire multiple locks in a fixed, global order to avoid deadlock. 
+</li><li>Prefer notifyAll to notify. 
+</li><li>Use spin locks for wait and notifyAll. 
+</li><li>Use wait and notifyAll instead of polling loops. 
+</li><li>Do not reassign the object reference of a locked object. 
+</li><li>Do not invoke the stop or suspend methods. 
+</li><li>Terminate threads through thread cooperation.
+</li></ol>
+
+<b>Classes and Interfaces</b>
+
+<ol start="59">
+<li>Use interfaces to support multiple inheritance. 
+</li><li>Avoid method clashes in interfaces. 
+</li><li>Use abstract classes when it makes sense to provide a partial implementation. 
+</li><li>Differentiate between an interface, abstract class, and concrete class. 
+</li><li>Define and implement immutable classes judiciously. 
+</li><li>Use clone for immutable objects when passing or receiving object references to mutable objects. 
+</li><li>Use inheritance or delegation to define immutable classes. 
+</li><li>Call super.clone when implementing a clone method. 
+</li><li>Do not rely on finalize methods for non-memory resource cleanup. 
+</li><li>Use care when calling non-final methods from constructors. 
+</li></ol>
+
+</body></html>
